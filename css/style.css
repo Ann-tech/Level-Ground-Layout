@@ -1,0 +1,271 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background: rgb(102, 118, 138);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul > div > li {
+  float: left;
+  padding-right: 1rem;
+}
+
+.align-nav-item {
+  float: left;
+  width: 33.3333%;
+}
+
+div.align-nav-item, .align-nav-item.donate {
+  margin-top: 10px;
+}
+.align-nav-item.lg-image-item {
+  text-align: center;
+}
+
+.align-nav-item.donate {
+  float: right;
+  text-align: right;
+}
+
+.align-nav-item.donate > a {
+  border-radius: 4px;
+  background: #fff;
+  padding: 1rem;
+  color: rgb(102, 118, 138);
+  font-weight: bold;
+}
+
+.align-nav-item a {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.header-sub-text {
+  line-height: 1.5;
+}
+
+.play-video-text {
+  margin-top: 2rem;
+}
+
+.play-video-text a {
+  color: #fff;
+}
+
+.play-video-text i {
+  background-color: rgb(102, 118, 138);
+}
+
+.bb-text{
+  color: rgb(48, 45, 45);
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+section {
+  text-align: center;
+  padding: 7rem 3rem;
+  
+}
+
+.middle-section-container {
+  background: rgb(219, 223, 226);
+}
+
+section p {
+  line-height: 1.5;
+}
+
+section > div {
+  background-color: rgba(0, 31, 63, 0.418);
+  margin-bottom: 3rem;
+  height: 200px;
+}
+
+section h2 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+section a {
+  color: #000;
+  border: 1px solid gray;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+footer {
+  padding: 1rem 2rem;
+  background: rgb(22, 31, 42);
+  color: #fff;
+}
+
+.align-footer-left {
+  float: left;
+}
+
+.align-footer-left i {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.align-footer-left div a {
+  margin-right: 1rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.align-footer-left span {
+  color: rgb(102, 118, 138);
+}
+
+.align-footer-right {
+  float: right;
+}
+
+.align-footer-right > span {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.align-footer-right address {
+  font-style: normal;
+  font-size: 1.2rem;
+  
+}
+
+.physical-address {
+  font-weight: 300;
+  color: rgb(219, 223, 226);
+}
+
+.bottom-border small {
+  float: left;
+  width: 50%;
+}
+
+.bottom-border img {
+  float: right;
+}
+
+.align-center {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.bottom-border {
+  border-top: 1px solid #fff;
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 568px) {
+  .middle-section {
+    width: 50%;
+    float: left;
+  }
+
+  .visit-section {
+    float: right;
+  }
+
+  .bb-text {
+    margin-top: 5rem;
+  }
+
+  .top-footer-section, nav {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .align-desktop-section {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin-bottom: 3rem;
+  }
+
+  .play-video-text {
+    margin-top: 3rem;
+  }
+
+  .header-sub-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .bb-text {
+    margin-top: 7rem;
+  }
+  section > div {
+    height: 250px;
+  }
+
+  
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
